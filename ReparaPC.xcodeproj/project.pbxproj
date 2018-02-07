@@ -12,6 +12,7 @@
 		25C1239A202B756000AC2D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C12398202B756000AC2D8E /* Main.storyboard */; };
 		25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239B202B756000AC2D8E /* Assets.xcassets */; };
 		25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */; };
+		25C123BE202B86DE00AC2D8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25C123BD202B85FD00AC2D8E /* GoogleService-Info.plist */; };
 		962A9BDCC06E1540ADC148C8 /* Pods_ReparaPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +24,7 @@
 		25C1239B202B756000AC2D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1239E202B756000AC2D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C123A0202B756000AC2D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25C123A6202B7D9A00AC2D8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		25C123BD202B85FD00AC2D8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E8EF4DEE1C11E055A065095 /* Pods-ReparaPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.release.xcconfig"; sourceTree = "<group>"; };
 		9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReparaPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2610620A7E390691EAA8FA8 /* Pods-ReparaPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		25C12388202B755F00AC2D8E = {
 			isa = PBXGroup;
 			children = (
+				25C123BC202B85FD00AC2D8E /* Enviroments */,
 				25C12393202B756000AC2D8E /* ReparaPC */,
 				25C12392202B756000AC2D8E /* Products */,
 				D0EAA6B5B788E6A64E0BB8A2 /* Pods */,
@@ -62,15 +64,62 @@
 		25C12393202B756000AC2D8E /* ReparaPC */ = {
 			isa = PBXGroup;
 			children = (
+				25C123B9202B85DD00AC2D8E /* Resources */,
+				25C123BA202B85DD00AC2D8E /* Server */,
+				25C123BB202B85DD00AC2D8E /* Utils */,
+				25C123B8202B85BB00AC2D8E /* ViewControllers */,
+				25C123B7202B859C00AC2D8E /* StoryBoards */,
 				25C12394202B756000AC2D8E /* AppDelegate.swift */,
-				25C12396202B756000AC2D8E /* ViewController.swift */,
-				25C12398202B756000AC2D8E /* Main.storyboard */,
 				25C1239B202B756000AC2D8E /* Assets.xcassets */,
-				25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */,
 				25C123A0202B756000AC2D8E /* Info.plist */,
-				25C123A6202B7D9A00AC2D8E /* GoogleService-Info.plist */,
 			);
 			path = ReparaPC;
+			sourceTree = "<group>";
+		};
+		25C123B7202B859C00AC2D8E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				25C12398202B756000AC2D8E /* Main.storyboard */,
+				25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		25C123B8202B85BB00AC2D8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25C12396202B756000AC2D8E /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25C123B9202B85DD00AC2D8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25C123BA202B85DD00AC2D8E /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		25C123BB202B85DD00AC2D8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25C123BC202B85FD00AC2D8E /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				25C123BD202B85FD00AC2D8E /* GoogleService-Info.plist */,
+			);
+			path = Enviroments;
 			sourceTree = "<group>";
 		};
 		89B1F0BE6FA710DDFAFE3988 /* Frameworks */ = {
@@ -153,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */,
+				25C123BE202B86DE00AC2D8E /* GoogleService-Info.plist in Resources */,
 				25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */,
 				25C1239A202B756000AC2D8E /* Main.storyboard in Resources */,
 			);
