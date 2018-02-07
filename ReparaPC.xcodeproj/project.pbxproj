@@ -12,6 +12,7 @@
 		25C1239A202B756000AC2D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C12398202B756000AC2D8E /* Main.storyboard */; };
 		25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239B202B756000AC2D8E /* Assets.xcassets */; };
 		25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */; };
+		962A9BDCC06E1540ADC148C8 /* Pods_ReparaPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		25C1239B202B756000AC2D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1239E202B756000AC2D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C123A0202B756000AC2D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C123A6202B7D9A00AC2D8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E8EF4DEE1C11E055A065095 /* Pods-ReparaPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.release.xcconfig"; sourceTree = "<group>"; };
+		9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReparaPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2610620A7E390691EAA8FA8 /* Pods-ReparaPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962A9BDCC06E1540ADC148C8 /* Pods_ReparaPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				25C12393202B756000AC2D8E /* ReparaPC */,
 				25C12392202B756000AC2D8E /* Products */,
+				D0EAA6B5B788E6A64E0BB8A2 /* Pods */,
+				89B1F0BE6FA710DDFAFE3988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,26 @@
 				25C1239B202B756000AC2D8E /* Assets.xcassets */,
 				25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */,
 				25C123A0202B756000AC2D8E /* Info.plist */,
+				25C123A6202B7D9A00AC2D8E /* GoogleService-Info.plist */,
 			);
 			path = ReparaPC;
+			sourceTree = "<group>";
+		};
+		89B1F0BE6FA710DDFAFE3988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0EAA6B5B788E6A64E0BB8A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2610620A7E390691EAA8FA8 /* Pods-ReparaPC.debug.xcconfig */,
+				8E8EF4DEE1C11E055A065095 /* Pods-ReparaPC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25C123A3202B756000AC2D8E /* Build configuration list for PBXNativeTarget "ReparaPC" */;
 			buildPhases = (
+				031CC585834E75133B7378BF /* [CP] Check Pods Manifest.lock */,
 				25C1238D202B756000AC2D8E /* Sources */,
 				25C1238E202B756000AC2D8E /* Frameworks */,
 				25C1238F202B756000AC2D8E /* Resources */,
+				8ABB3981C888EE7B86229609 /* [CP] Embed Pods Frameworks */,
+				193A8CD45646DCF0224587F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031CC585834E75133B7378BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReparaPC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		193A8CD45646DCF0224587F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ABB3981C888EE7B86229609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25C1238D202B756000AC2D8E /* Sources */ = {
@@ -272,6 +364,7 @@
 		};
 		25C123A4202B756000AC2D8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2610620A7E390691EAA8FA8 /* Pods-ReparaPC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +381,7 @@
 		};
 		25C123A5202B756000AC2D8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8EF4DEE1C11E055A065095 /* Pods-ReparaPC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
