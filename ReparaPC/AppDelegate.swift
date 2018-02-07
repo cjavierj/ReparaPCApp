@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        RPSingleton.configuration.menuBar = {
+            let mb = RPMenuBar()
+            return mb
+        }()
+        
+        RPSingleton.configuration.optionBar = {
+            let ob = RPOptionBar()
+            return ob
+        }()
+        let viewController = configureInitViewController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        
+        UINavigationBar.appearance().barTintColor = UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+        
+        // get rid of black bar underneath navbar
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+        application.statusBarStyle = .lightContent
+        
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+        
+        window?.addSubview(statusBarBackgroundView)
+        window?.addConstraintsWithFormat(format:"H:|[v0]|", views: statusBarBackgroundView)
+        let model = UIDevice()
+        if model.modelName == "iPhone X"{
+            window?.addConstraintsWithFormat(format: "V:|[v0(50)]", views: statusBarBackgroundView)
+        }else{
+            window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
+        }
+        
+        RPSingleton.configuration.theme = RPThemeManager(brand: .RPTheme)
+        
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().toolbarDoneBarButtonItemText = "Cerrar"
+        
+        // Ask for Authorization from the User
+        //        if (locService == nil )
+        //        {
+        //            locService = TLocationService()
+        //        }
+        //        locService?.enableLocationManager()
+        UserDefaults.standard.setValue(false, forKey:"_UIConstraintBasedLayoutLogUnsatisfiable")
         return true
     }
 
@@ -40,7 +89,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func configureInitViewController() -> UIViewController{
+        let noFirstOpen = UserDefaults.standard.bool(forKey:"noFirstOpen")
+        var viewController:UIViewController!
+        if (!noFirstOpen){
+            //viewController = TNewsViewController(nibName:"TNewsView", bundle:nil)
+            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! ViewController
+        }else{
+            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! ViewController
+            //viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TMyTrips") as! TMyTripsViewController
+        }
+        
+        
+        return viewController
+    }
 
 }
 
