@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  BStore
+
+  Created by Enrique Bautista A on 12/09/17.
+  Copyright © 2017 IDS Comercial. All rights reserved.
+*/
+
+//TITULOS
+"TITLE_TRIPS" = "Mis viajes";
+"TITLE_GIVE_PLAZE" = "Ceder plaza temporal";
+"TITLE_NOTIFICATION" = "Notificaciones";
+"TITLE_ROUTES" = "Rutas";
+"TITLE_RESERVE" = "Reservar";
+"TITLE_CHECK_AUTH" = "Revisa y autoriza";
+"TITLE_PROFILE" = "Mi perfil";
+"TITLE_TERMS" = "Términos y condiciones";
+"TITLE_FREQUENT_QUESTIONS" = "Preguntas Frecuentes";
+
+//TUTORIAL
+"TUTORIAL_TITLE_PERMANENTE" = "Viaje permanente";
+"TUTORIAL_TITLE_ESPONTANEO"="Viaje espontáneo";
+"TUTORIAL_TITLE_INTERSEDES" = "Intersedes";
+"TUTORIAL_TITLE_RUTAS" = "Rutas";
+
+"TUTORIAL_DESCRIPTION_PERMANENTE" = "Regístrate para períodos largos en el transporte corporativo para llegar a tu sede laboral.";
+
+"TUTORIAL_DESCRIPTION_ESPONTANEO" = "Planea tus viajes por día o semana de acuerdo a tus actividades.";
+
+"TUTORIAL_DESCRIPTION_INTERSEDES" = "Viaja seguro entre Sedes corporativas con la seguridad de horarios y lugares.";
+
+"TUTORIAL_DESCRIPTION_RUTAS" = "Identifica y elige tus rutas y paradas y libera los días que no utilices rápidamente.";
+
+//CONSTANTS
+"COMMENT_DEF_TEXT" = "¿Deseas agregar un comentario?";
+"NULL" = "null";
+"ROUTE_KEY" = "Ruta";
+"FIRST_DAY_KEY" = "DÍA";
+"FIRST_ROUTE_KEY" = "RUTA";
+"SECOND_EXIT_KEY" = "SALIDA";
+"THIRDN_STATUS_KEY" = "ESTATUS";
+
+//URL
+"url_SIM" = "https://transporte-back-service-dot-ids-bbva-backend.appspot.com/s/service/";
+
+"url_AU" = "https://transporte-back-service-dot-ids-bbva-backend.appspot.com/s/service/";
+"url_DEV" = "http://dev-bbva-gateway.appspot.com/transportecorp/s/service/";
+"url_PROD" = "http://bbva-gateway.appspot.com/transportecorp/s/service/";
+
+"url_Waze" = "waze://?ll=%f,%f&navigate=yes";
+"url_GoogleMaps" = "comgooglemaps://?saddr=&daddr=%f,%f&directionsmode=driving";
+
+//transport constants
+"MY_TRIPS" = "Mis viajes";
+"REVIEW_AND_AUTHORIZE" = "Revisa y autoriza";
+"NO_NEXT_TRIPS" = "No tienes viajes reservados";
+"NO_HISTORY_TRIPS" = "No tienes historial de viajes";
+
+//Server constants
+"URL_GET_USER" = "getUser";
+"URL_GET_NEWS" = "getNews";
+"URL_GET_TERMS" = "getTerms";
+"URL_GET_FRECUENT_QUESTIONS" = "getFrecuentQuestions";
+"URL_GET_PROFILE" = "getProfile";
+"URL_GET_MY_NEXT_TRIPS" = "getMyNextTrips";
+"URL_GET_MY_TRIPS_HISTORY" = "getMyTripsHistory";
+"URL_GET_CORPORATE_TRANSPORT" = "getCorporateTransport";
+"URL_GET_SPONTANEOUS_TRANSPORT" = "getSpontaneousTransport";
+"URL_GET_VENUES" = "getVenues";
+"URL_GET_REASONS_INTERSEDES_TRANSPORT" = "getReasonsGivenPlace";
+"URL_GET_INTERSEDES_TRANSPORT" = "getIntersedesTransport";
+"URL_CHECK_IN" = "checkIn";
+"URL_CANCEL_TRIP" = "cancelTrip";
+"URL_GIVE_PLACE_TEMPORARILY" = "givePlaceTemporarily";
+"URL_REPORT_TRIP" = "reportTrip";
+"URL_DETAIL_ROUTES" = "getDetailRoutes";
+"URL_MONTH_RESERVATIONS" = "getMonthReservations";
+"URL_ADD_INTERSEDE_RESERVATION" = "addIntersedeReservation";
+"URL_ADD_CORPORATE_RESERVATION" = "addCorporateReservation";
+"URL_ADD_SPONTANEOUS_RESERVATION" = "addSpontaneousReservation";
+"URL_GET_CORPORATE_TRIP" = "getCorporateTrip";
+"URL_GET_PUSH_NOTIFICATIONS" = "getPushNotifications";
+"URL_DELETE_PUSH_NOTIFICATIONS" = "deletePushNotification";
+"URL_GET_SPONTANEOUS_DAYS" = "getSpontaneousDay";
+
