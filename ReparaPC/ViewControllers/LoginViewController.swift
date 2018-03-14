@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func loginAction(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "MainView", sender: self)
+        }
+    }
+    
 
 
 }

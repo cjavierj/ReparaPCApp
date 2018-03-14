@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = UINavigationController(rootViewController: viewController)
         
-        UINavigationBar.appearance().barTintColor = UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+        UINavigationBar.appearance().barTintColor = UIColor.returnRGBColor(r: 0, g: 0, b: 0, alpha: 1)
         
         // get rid of black bar underneath navbar
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = .lightContent
         
         let statusBarBackgroundView = UIView()
-        statusBarBackgroundView.backgroundColor = UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+        statusBarBackgroundView.backgroundColor = UIColor.returnRGBColor(r: 0, g: 0, b: 0, alpha: 1)
         
         window?.addSubview(statusBarBackgroundView)
         window?.addConstraintsWithFormat(format:"H:|[v0]|", views: statusBarBackgroundView)
@@ -94,11 +94,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let noFirstOpen = UserDefaults.standard.bool(forKey:"noFirstOpen")
         var viewController:UIViewController!
         if (!noFirstOpen){
-            //viewController = TNewsViewController(nibName:"TNewsView", bundle:nil)
-            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! ViewController
+            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! LoginViewController
         }else{
-            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! ViewController
-            //viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TMyTrips") as! TMyTripsViewController
+            viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "View") as! LoginViewController
+
         }
         
         

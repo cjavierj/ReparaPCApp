@@ -11,29 +11,26 @@ import UIKit
 extension RPBaseViewController
 {
     
-    func setupNavigationBarItems()
-    {
+    func setupNavigationBarItems(){
         setupLeftNavItems()
-        setupRightNavItems()
+        //setupRightNavItems()
         setupRemainingNavItems()
         
     }
     
-    private func setupRemainingNavItems()
-    {
-        navigationController?.navigationBar.backgroundColor = UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+    private func setupRemainingNavItems(){
+        navigationController?.navigationBar.backgroundColor = UIColor.returnRGBColor(r: 0, g: 0, b: 0, alpha: 1)
     }
     
-    private func setupLeftNavItems()
-    {
+    private func setupLeftNavItems(){
         
         let sideMenuButton = UIButton(type: .system)
-        sideMenuButton.setImage(#imageLiteral(resourceName: "icn-menuhamburguesa-white").withRenderingMode(.alwaysOriginal), for: .normal)
+        sideMenuButton.setImage(#imageLiteral(resourceName: "hamburgesa").withRenderingMode(.alwaysOriginal), for: .normal)
         sideMenuButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         sideMenuButton.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
         
         let backButton = UIButton(type: .system)
-        backButton.setImage(#imageLiteral(resourceName: "arrowback_white").withRenderingMode(.alwaysOriginal), for: .normal)
+        backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
         backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         backButton.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
         
@@ -51,19 +48,17 @@ extension RPBaseViewController
         navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: sideMenuButton), UIBarButtonItem(customView: spaceView), UIBarButtonItem(customView: textLabel)]
     }
     
-    func setupLeftBackNavItems()
-    {
+    func setupLeftBackNavItems(){
         let backButton = UIButton(type: .system)
-        backButton.setImage(#imageLiteral(resourceName: "arrowback_white").withRenderingMode(.alwaysOriginal), for: .normal)
+        backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
         backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         backButton.addTarget(self, action: #selector(backToView), for: .touchUpInside)
         self.setupNavItems(buttom: backButton)
     }
     
-    func setupLeftBackSpecialNavItems()
-    {
+    func setupLeftBackSpecialNavItems(){
         let backButton = UIButton(type: .system)
-        backButton.setImage(#imageLiteral(resourceName: "arrowback_white").withRenderingMode(.alwaysOriginal), for: .normal)
+        backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
         backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         backButton.addTarget(self, action: #selector(backToViewSpecial), for: .touchUpInside)
         self.setupNavItems(buttom: backButton)
@@ -83,8 +78,7 @@ extension RPBaseViewController
         navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: buttom),UIBarButtonItem(customView: spaceView), UIBarButtonItem(customView: textLabel)]
     }
     
-    private func setupRightNavItems()
-    {
+    private func setupRightNavItems(){
         let notificationsButton = UIButton(type: .system)
     
         notificationsButton.setImage(self.hasNotifications().withRenderingMode(.alwaysOriginal), for: .normal)
@@ -95,8 +89,7 @@ extension RPBaseViewController
         
     }
     
-    @objc func handleSearch()
-    {
+    @objc func handleSearch(){
         if let mainvc2 = self.mainVC
         {
             mainvc2.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)

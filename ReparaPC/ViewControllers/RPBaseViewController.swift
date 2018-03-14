@@ -20,9 +20,7 @@ class RPBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.nextTrips = true
-        // Do any additional setup after loading the view, typically from a nib.
-//        mainVC = THamburgerMenuViewController(nibName:"THamburgerMenuViewController", bundle:nil)
-//        notificationsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "notifications") as! TNotificationsViewController
+        mainVC = HamburgerMenuViewController(nibName:"HamburgerMenuViewController", bundle:nil)
         setupReloadHeader()
         setupNavigationBarItems()
     }
@@ -36,8 +34,7 @@ class RPBaseViewController: UIViewController {
         setupReloadHeader()
     }
     
-    func setupReloadHeader()
-    {
+    func setupReloadHeader(){
         RPSingleton.configuration.menuBar.baseViewController = self
         RPSingleton.configuration.optionBar.baseViewController = self
         setupMenuBar()
@@ -113,13 +110,11 @@ class RPBaseViewController: UIViewController {
         }
     }
     
-    public func showBackButon()
-    {
+    public func showBackButon(){
         setupLeftBackNavItems()
     }
     
-    public func showBackSpecialButon()
-    {
+    public func showBackSpecialButon(){
         setupLeftBackSpecialNavItems()
     }
     

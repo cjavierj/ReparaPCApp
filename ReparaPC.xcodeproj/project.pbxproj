@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A8A48D20599DCA00675497 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8A48C20599DCA00675497 /* MainViewController.swift */; };
+		25A8A4912059ACD400675497 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25A8A48F2059ACCD00675497 /* Localizable.strings */; };
+		25A8A4922059ACDA00675497 /* HamburgerMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */; };
+		25A8A4942059AE1800675497 /* HamburgerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8A4932059AE1800675497 /* HamburgerMenuViewController.swift */; };
 		25C12395202B756000AC2D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C12394202B756000AC2D8E /* AppDelegate.swift */; };
-		25C12397202B756000AC2D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C12396202B756000AC2D8E /* ViewController.swift */; };
+		25C12397202B756000AC2D8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C12396202B756000AC2D8E /* LoginViewController.swift */; };
 		25C1239A202B756000AC2D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C12398202B756000AC2D8E /* Main.storyboard */; };
 		25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239B202B756000AC2D8E /* Assets.xcassets */; };
 		25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */; };
@@ -30,9 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25A8A48C20599DCA00675497 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25A8A48F2059ACCD00675497 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HamburgerMenuViewController.xib; sourceTree = "<group>"; };
+		25A8A4932059AE1800675497 /* HamburgerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenuViewController.swift; sourceTree = "<group>"; };
 		25C12391202B756000AC2D8E /* ReparaPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReparaPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C12394202B756000AC2D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25C12396202B756000AC2D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25C12396202B756000AC2D8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		25C12399202B756000AC2D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25C1239B202B756000AC2D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1239E202B756000AC2D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A8A48E2059ACCD00675497 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				25A8A48F2059ACCD00675497 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		25C12388202B755F00AC2D8E = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				25C123BB202B85DD00AC2D8E /* Utils */,
-				25C123B9202B85DD00AC2D8E /* Resources */,
 				25C123BA202B85DD00AC2D8E /* Server */,
 				25C123B8202B85BB00AC2D8E /* ViewControllers */,
+				25C123B9202B85DD00AC2D8E /* Resources */,
 				25C123B7202B859C00AC2D8E /* StoryBoards */,
 				25C12394202B756000AC2D8E /* AppDelegate.swift */,
 				25C1239B202B756000AC2D8E /* Assets.xcassets */,
@@ -118,7 +134,9 @@
 				25C123DE202BAE7400AC2D8E /* Helpers */,
 				25C123CF202B8E1900AC2D8E /* Menu */,
 				25C123DC202B8F1100AC2D8E /* RPBaseViewController.swift */,
-				25C12396202B756000AC2D8E /* ViewController.swift */,
+				25C12396202B756000AC2D8E /* LoginViewController.swift */,
+				25A8A48C20599DCA00675497 /* MainViewController.swift */,
+				25A8A4932059AE1800675497 /* HamburgerMenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,6 +144,8 @@
 		25C123B9202B85DD00AC2D8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25A8A48E2059ACCD00675497 /* Strings */,
+				25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -283,8 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */,
+				25A8A4912059ACD400675497 /* Localizable.strings in Resources */,
 				25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */,
 				25C1239A202B756000AC2D8E /* Main.storyboard in Resources */,
+				25A8A4922059ACDA00675497 /* HamburgerMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,12 +381,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C123D7202B8E3700AC2D8E /* RPBaseCell.swift in Sources */,
-				25C12397202B756000AC2D8E /* ViewController.swift in Sources */,
+				25C12397202B756000AC2D8E /* LoginViewController.swift in Sources */,
 				25C123CE202B8CB400AC2D8E /* RPThemeManager.swift in Sources */,
 				25C123C9202B8B5C00AC2D8E /* RPSingleton.swift in Sources */,
 				25C123E3202BAE8B00AC2D8E /* RPBaseViewController+navbar.swift in Sources */,
 				25C123E4202BAE8D00AC2D8E /* Utility.swift in Sources */,
 				25C12395202B756000AC2D8E /* AppDelegate.swift in Sources */,
+				25A8A48D20599DCA00675497 /* MainViewController.swift in Sources */,
 				25C123DD202B8F1100AC2D8E /* RPBaseViewController.swift in Sources */,
 				25C123DB202B8E4100AC2D8E /* RPOptionCell.swift in Sources */,
 				25C123DA202B8E3F00AC2D8E /* RPOptionBar.swift in Sources */,
@@ -373,6 +396,7 @@
 				25C123CB202B8B9800AC2D8E /* RPConstants.swift in Sources */,
 				25C123C7202B8A2500AC2D8E /* RPExtensions.swift in Sources */,
 				25C123D8202B8E3A00AC2D8E /* RPMenuBar.swift in Sources */,
+				25A8A4942059AE1800675497 /* HamburgerMenuViewController.swift in Sources */,
 				25C123E5202BAF9700AC2D8E /* RPHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

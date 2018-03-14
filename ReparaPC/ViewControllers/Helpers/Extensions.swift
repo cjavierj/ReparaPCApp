@@ -58,6 +58,13 @@ extension UIColor{
 }
 
 extension UIView {
+    
+    func addBorderColor(){
+        self.layer.borderColor = UIColor.darkGray.cgColor
+        self.layer.borderWidth = 3.0
+        self.layer.cornerRadius = 10.0
+    }
+    
     func addConstraintsWithFormat(format:String, views: UIView...){
         
         var viewsDictionary = [String:UIView]()
