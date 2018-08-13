@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2527BCF92108DD99000FFEFE /* CustomPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2527BCF82108DD99000FFEFE /* CustomPickerView.xib */; };
+		2527BCFC2108E00C000FFEFE /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527BCFB2108E00C000FFEFE /* CustomPickerViewController.swift */; };
+		2586A57F20E5542D0015D2EA /* Hamburger.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2586A57E20E5542D0015D2EA /* Hamburger.storyboard */; };
+		2586A58220E554FB0015D2EA /* RPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586A58120E554FB0015D2EA /* RPMapViewController.swift */; };
+		2586A58420E55A250015D2EA /* RPLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586A58320E55A240015D2EA /* RPLocationService.swift */; };
+		25A6025520E6A2D800461EA7 /* RPContacUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6025420E6A2D800461EA7 /* RPContacUsViewController.swift */; };
 		25A8A48D20599DCA00675497 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8A48C20599DCA00675497 /* MainViewController.swift */; };
 		25A8A4912059ACD400675497 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25A8A48F2059ACCD00675497 /* Localizable.strings */; };
 		25A8A4922059ACDA00675497 /* HamburgerMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */; };
@@ -30,10 +36,21 @@
 		25C123E3202BAE8B00AC2D8E /* RPBaseViewController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C123E0202BAE8700AC2D8E /* RPBaseViewController+navbar.swift */; };
 		25C123E4202BAE8D00AC2D8E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C123E1202BAE8700AC2D8E /* Utility.swift */; };
 		25C123E5202BAF9700AC2D8E /* RPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C123C5202B89DE00AC2D8E /* RPHelpers.swift */; };
+		25D9735720FE956100BCBB7D /* Client.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D9735620FE956100BCBB7D /* Client.storyboard */; };
+		25D9735A20FE979100BCBB7D /* RPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D9735920FE979100BCBB7D /* RPClientViewController.swift */; };
+		25D9735C20FE987D00BCBB7D /* ClientTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D9735B20FE987D00BCBB7D /* ClientTableCell.xib */; };
+		25D9735E20FE98A400BCBB7D /* RPClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D9735D20FE98A400BCBB7D /* RPClientTableViewCell.swift */; };
+		25E62D0C2110D126002CFCFC /* RPNewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E62D0B2110D126002CFCFC /* RPNewClientViewController.swift */; };
 		962A9BDCC06E1540ADC148C8 /* Pods_ReparaPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2527BCF82108DD99000FFEFE /* CustomPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerView.xib; sourceTree = "<group>"; };
+		2527BCFB2108E00C000FFEFE /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		2586A57E20E5542D0015D2EA /* Hamburger.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hamburger.storyboard; sourceTree = "<group>"; };
+		2586A58120E554FB0015D2EA /* RPMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPMapViewController.swift; sourceTree = "<group>"; };
+		2586A58320E55A240015D2EA /* RPLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPLocationService.swift; sourceTree = "<group>"; };
+		25A6025420E6A2D800461EA7 /* RPContacUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPContacUsViewController.swift; sourceTree = "<group>"; };
 		25A8A48C20599DCA00675497 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25A8A48F2059ACCD00675497 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HamburgerMenuViewController.xib; sourceTree = "<group>"; };
@@ -60,6 +77,11 @@
 		25C123DF202BAE8600AC2D8E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		25C123E0202BAE8700AC2D8E /* RPBaseViewController+navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RPBaseViewController+navbar.swift"; sourceTree = "<group>"; };
 		25C123E1202BAE8700AC2D8E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		25D9735620FE956100BCBB7D /* Client.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Client.storyboard; sourceTree = "<group>"; };
+		25D9735920FE979100BCBB7D /* RPClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPClientViewController.swift; sourceTree = "<group>"; };
+		25D9735B20FE987D00BCBB7D /* ClientTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientTableCell.xib; sourceTree = "<group>"; };
+		25D9735D20FE98A400BCBB7D /* RPClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPClientTableViewCell.swift; sourceTree = "<group>"; };
+		25E62D0B2110D126002CFCFC /* RPNewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPNewClientViewController.swift; sourceTree = "<group>"; };
 		8E8EF4DEE1C11E055A065095 /* Pods-ReparaPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.release.xcconfig"; sourceTree = "<group>"; };
 		9D50A080C3C8C3D071F84353 /* Pods_ReparaPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReparaPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2610620A7E390691EAA8FA8 /* Pods-ReparaPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReparaPC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReparaPC/Pods-ReparaPC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2527BCFA2108DFEC000FFEFE /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				2527BCFB2108E00C000FFEFE /* CustomPickerViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		2586A58020E554CB0015D2EA /* Hamburger */ = {
+			isa = PBXGroup;
+			children = (
+				25A8A4932059AE1800675497 /* HamburgerMenuViewController.swift */,
+				2586A58120E554FB0015D2EA /* RPMapViewController.swift */,
+				25A6025420E6A2D800461EA7 /* RPContacUsViewController.swift */,
+			);
+			path = Hamburger;
+			sourceTree = "<group>";
+		};
 		25A8A48E2059ACCD00675497 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +153,8 @@
 				25C123B9202B85DD00AC2D8E /* Resources */,
 				25C123B7202B859C00AC2D8E /* StoryBoards */,
 				25C12394202B756000AC2D8E /* AppDelegate.swift */,
+				25C12398202B756000AC2D8E /* Main.storyboard */,
+				25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */,
 				25C1239B202B756000AC2D8E /* Assets.xcassets */,
 				25C123A0202B756000AC2D8E /* Info.plist */,
 			);
@@ -122,8 +164,8 @@
 		25C123B7202B859C00AC2D8E /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				25C12398202B756000AC2D8E /* Main.storyboard */,
-				25C1239D202B756000AC2D8E /* LaunchScreen.storyboard */,
+				2586A57E20E5542D0015D2EA /* Hamburger.storyboard */,
+				25D9735620FE956100BCBB7D /* Client.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -131,12 +173,15 @@
 		25C123B8202B85BB00AC2D8E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2527BCFA2108DFEC000FFEFE /* Commons */,
+				25D9735F20FEA23D00BCBB7D /* Cells */,
+				25D9735820FE975400BCBB7D /* Client */,
+				2586A58020E554CB0015D2EA /* Hamburger */,
 				25C123DE202BAE7400AC2D8E /* Helpers */,
 				25C123CF202B8E1900AC2D8E /* Menu */,
 				25C123DC202B8F1100AC2D8E /* RPBaseViewController.swift */,
 				25C12396202B756000AC2D8E /* LoginViewController.swift */,
 				25A8A48C20599DCA00675497 /* MainViewController.swift */,
-				25A8A4932059AE1800675497 /* HamburgerMenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,6 +191,8 @@
 			children = (
 				25A8A48E2059ACCD00675497 /* Strings */,
 				25A8A4902059ACCD00675497 /* HamburgerMenuViewController.xib */,
+				25D9735B20FE987D00BCBB7D /* ClientTableCell.xib */,
+				2527BCF82108DD99000FFEFE /* CustomPickerView.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +212,7 @@
 				25C123CA202B8B9800AC2D8E /* RPConstants.swift */,
 				25C123C8202B8B5C00AC2D8E /* RPSingleton.swift */,
 				25C123C6202B8A2500AC2D8E /* RPExtensions.swift */,
+				2586A58320E55A240015D2EA /* RPLocationService.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -221,6 +269,23 @@
 				25C123E1202BAE8700AC2D8E /* Utility.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25D9735820FE975400BCBB7D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				25D9735920FE979100BCBB7D /* RPClientViewController.swift */,
+				25E62D0B2110D126002CFCFC /* RPNewClientViewController.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		25D9735F20FEA23D00BCBB7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25D9735D20FE98A400BCBB7D /* RPClientTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		89B1F0BE6FA710DDFAFE3988 /* Frameworks */ = {
@@ -303,9 +368,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C1239F202B756000AC2D8E /* LaunchScreen.storyboard in Resources */,
+				25D9735720FE956100BCBB7D /* Client.storyboard in Resources */,
 				25A8A4912059ACD400675497 /* Localizable.strings in Resources */,
+				25D9735C20FE987D00BCBB7D /* ClientTableCell.xib in Resources */,
 				25C1239C202B756000AC2D8E /* Assets.xcassets in Resources */,
 				25C1239A202B756000AC2D8E /* Main.storyboard in Resources */,
+				2586A57F20E5542D0015D2EA /* Hamburger.storyboard in Resources */,
+				2527BCF92108DD99000FFEFE /* CustomPickerView.xib in Resources */,
 				25A8A4922059ACDA00675497 /* HamburgerMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,15 +450,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C123D7202B8E3700AC2D8E /* RPBaseCell.swift in Sources */,
+				25D9735E20FE98A400BCBB7D /* RPClientTableViewCell.swift in Sources */,
+				25D9735A20FE979100BCBB7D /* RPClientViewController.swift in Sources */,
 				25C12397202B756000AC2D8E /* LoginViewController.swift in Sources */,
+				2586A58220E554FB0015D2EA /* RPMapViewController.swift in Sources */,
 				25C123CE202B8CB400AC2D8E /* RPThemeManager.swift in Sources */,
 				25C123C9202B8B5C00AC2D8E /* RPSingleton.swift in Sources */,
 				25C123E3202BAE8B00AC2D8E /* RPBaseViewController+navbar.swift in Sources */,
 				25C123E4202BAE8D00AC2D8E /* Utility.swift in Sources */,
 				25C12395202B756000AC2D8E /* AppDelegate.swift in Sources */,
+				25A6025520E6A2D800461EA7 /* RPContacUsViewController.swift in Sources */,
 				25A8A48D20599DCA00675497 /* MainViewController.swift in Sources */,
 				25C123DD202B8F1100AC2D8E /* RPBaseViewController.swift in Sources */,
 				25C123DB202B8E4100AC2D8E /* RPOptionCell.swift in Sources */,
+				25E62D0C2110D126002CFCFC /* RPNewClientViewController.swift in Sources */,
 				25C123DA202B8E3F00AC2D8E /* RPOptionBar.swift in Sources */,
 				25C123E2202BAE8800AC2D8E /* Extensions.swift in Sources */,
 				25C123D9202B8E3C00AC2D8E /* RPMenuCell.swift in Sources */,
@@ -397,6 +471,8 @@
 				25C123C7202B8A2500AC2D8E /* RPExtensions.swift in Sources */,
 				25C123D8202B8E3A00AC2D8E /* RPMenuBar.swift in Sources */,
 				25A8A4942059AE1800675497 /* HamburgerMenuViewController.swift in Sources */,
+				2586A58420E55A250015D2EA /* RPLocationService.swift in Sources */,
+				2527BCFC2108E00C000FFEFE /* CustomPickerViewController.swift in Sources */,
 				25C123E5202BAF9700AC2D8E /* RPHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,7 +614,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS5GBL8CXX;
 				INFOPLIST_FILE = ReparaPC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oscod.ReparaPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,7 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS5GBL8CXX;
 				INFOPLIST_FILE = ReparaPC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oscod.ReparaPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

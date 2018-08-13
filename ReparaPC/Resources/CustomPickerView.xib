@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomPickerViewController" customModule="ReparaPC" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="qVv-0c-Wok" id="kZD-Nj-adO"/>
+                <outlet property="customPickerBarView" destination="nlg-SR-B1u" id="vaI-HF-wFH"/>
+                <outlet property="customPickerView" destination="8bE-vr-RmU" id="hIo-n6-vgm"/>
+                <outlet property="view" destination="ae9-Hd-ftl" id="dYR-g0-JIV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="ae9-Hd-ftl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-SR-B1u">
+                    <rect key="frame" x="0.0" y="400" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-5b-OLs">
+                            <rect key="frame" x="10" y="0.0" width="54" height="45"/>
+                            <state key="normal" title="Aceptar">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="YhR-m3-pCa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvj-R2-LhF">
+                            <rect key="frame" x="321" y="0.0" width="44" height="45"/>
+                            <state key="normal" title="Cerrar">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="vfy-cC-7Iu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dEN-5b-OLs" firstAttribute="top" secondItem="nlg-SR-B1u" secondAttribute="top" id="95H-Y2-LLz"/>
+                        <constraint firstItem="Rvj-R2-LhF" firstAttribute="top" secondItem="nlg-SR-B1u" secondAttribute="top" id="KFv-1P-Rn4"/>
+                        <constraint firstAttribute="bottom" secondItem="dEN-5b-OLs" secondAttribute="bottom" id="VFd-Q5-nBF"/>
+                        <constraint firstAttribute="bottom" secondItem="Rvj-R2-LhF" secondAttribute="bottom" id="W9k-ld-emW"/>
+                        <constraint firstAttribute="trailing" secondItem="Rvj-R2-LhF" secondAttribute="trailing" constant="10" id="onx-oy-ppc"/>
+                        <constraint firstAttribute="height" constant="45" id="rUG-oZ-gdM"/>
+                        <constraint firstItem="dEN-5b-OLs" firstAttribute="leading" secondItem="nlg-SR-B1u" secondAttribute="leading" constant="10" id="vuA-lE-6Al"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-vr-RmU">
+                    <rect key="frame" x="0.0" y="445" width="375" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="3B8-9t-uf1"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CSN-t7-5tX"/>
+                        <outlet property="delegate" destination="-1" id="7aJ-02-TBG"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8bE-vr-RmU" firstAttribute="top" secondItem="nlg-SR-B1u" secondAttribute="bottom" id="2TG-WS-6jo"/>
+                <constraint firstItem="8bE-vr-RmU" firstAttribute="trailing" secondItem="pvQ-Wq-T5N" secondAttribute="trailing" id="Euq-3B-emP"/>
+                <constraint firstItem="pvQ-Wq-T5N" firstAttribute="trailing" secondItem="nlg-SR-B1u" secondAttribute="trailing" id="T0x-xT-H0s"/>
+                <constraint firstItem="8bE-vr-RmU" firstAttribute="bottom" secondItem="pvQ-Wq-T5N" secondAttribute="bottom" constant="400" id="qVv-0c-Wok"/>
+                <constraint firstItem="8bE-vr-RmU" firstAttribute="leading" secondItem="pvQ-Wq-T5N" secondAttribute="leading" id="unS-AE-1rl"/>
+                <constraint firstItem="nlg-SR-B1u" firstAttribute="leading" secondItem="pvQ-Wq-T5N" secondAttribute="leading" id="z0v-by-g26"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="pvQ-Wq-T5N"/>
+            <point key="canvasLocation" x="249.5" y="185"/>
+        </view>
+    </objects>
+</document>

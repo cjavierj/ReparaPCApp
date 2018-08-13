@@ -13,7 +13,7 @@ import IQKeyboardManagerSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locService : RPLocationService?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -59,11 +59,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().toolbarDoneBarButtonItemText = "Cerrar"
         
         // Ask for Authorization from the User
-        //        if (locService == nil )
-        //        {
-        //            locService = TLocationService()
-        //        }
-        //        locService?.enableLocationManager()
+        if (locService == nil ) {
+            locService = RPLocationService()
+        }
+        locService?.enableLocationManager()
+        
         UserDefaults.standard.setValue(false, forKey:"_UIConstraintBasedLayoutLogUnsatisfiable")
         return true
     }

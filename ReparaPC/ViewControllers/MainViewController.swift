@@ -18,7 +18,7 @@ class MainViewController: RPBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleBarNavigation = "Main"
+        self.titleBarNavigation = RPHelpers.findString("TITLE_MAIN")
         self.setupNavigationBarItems()
         // Do any additional setup after loading the view.
     }
@@ -35,9 +35,10 @@ class MainViewController: RPBaseViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func showClientView(_ sender: Any) {
+       let indexPath = IndexPath(item: 0, section: 0)
+        RPSingleton.configuration.menuBar.collectionView(RPSingleton.configuration.menuBar.collectionView, didSelectItemAt: indexPath)
     }
+    
 
 }

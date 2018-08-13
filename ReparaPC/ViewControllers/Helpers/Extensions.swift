@@ -174,6 +174,10 @@ extension String {
     func containsIgnoringCase(find: String) -> Bool{
         return self.range(of: find, options: NSString.CompareOptions.caseInsensitive) != nil
     }
+    
+    func trim() -> String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }
 
 

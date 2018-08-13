@@ -1,9 +1,9 @@
 //
-//  TMenuCell.swift
-//  Transporte
+//  RPMenuCell.swift
+//  ReparaPC
 //
-//  Created by Javier Cervantes on 13/11/17.
-//  Copyright © 2017 IDS Comercial. All rights reserved.
+//  Created by Javier Cervantes on 31/07/18.
+//  Copyright © 2018 Oscod. All rights reserved.
 //
 
 import UIKit
@@ -25,29 +25,26 @@ class RPMenuCell : RPBaseCell{
         return lbt
     }()
     
-    override var isHighlighted: Bool{
-        didSet{
+    override var isHighlighted: Bool {
+        didSet {
             imageView.tintColor = UIColor.white
             labelText.textColor = UIColor.white
         }
     }
     
     override var isSelected: Bool{
-        didSet{
+        didSet {
             switch position {
             case 0:
-                imageView.tintColor = isSelected ? UIColor.returnRGBColor(r: 46, g: 203, b: 205, alpha: 1) : UIColor.white
-                labelText.textColor  = isSelected ? UIColor.returnRGBColor(r: 46, g: 203, b: 205, alpha: 1) : UIColor.white
+                imageView.tintColor = isSelected ? UIColor.returnRGBColor(r: 138, g: 149, b: 151, alpha: 1) : UIColor.white
+                labelText.textColor  = isSelected ? UIColor.returnRGBColor(r: 138, g: 149, b: 151, alpha: 1) : UIColor.white
             case 1:
-                imageView.tintColor = isSelected ? UIColor.returnRGBColor(r: 198, g: 183, b: 255, alpha: 1) : UIColor.white
-                labelText.textColor  = isSelected ? UIColor.returnRGBColor(r: 198, g: 183, b: 255, alpha: 1) : UIColor.white
-            case 2:
-                imageView.tintColor = isSelected ? UIColor.returnRGBColor(r: 216, g: 190, b: 118, alpha: 1) : UIColor.white
-                labelText.textColor  = isSelected ? UIColor.returnRGBColor(r: 216, g: 190, b: 118, alpha: 1) : UIColor.white
+                imageView.tintColor = isSelected ? UIColor.returnRGBColor(r: 138, g: 149, b: 151, alpha: 1) : UIColor.white
+                labelText.textColor  = isSelected ? UIColor.returnRGBColor(r: 138, g: 149, b: 151, alpha: 1) : UIColor.white
             default:
                 break
             }
-            backgroundColor = isSelected ?  UIColor.returnRGBColor(r: 42, g: 134, b: 202, alpha: 0.60) : UIColor.returnRGBColor(r: 7, g: 33, b: 70, alpha: 1)
+            backgroundColor = isSelected ?  UIColor.returnRGBColor(r: 52, g: 73, b: 94, alpha: 0.60) : UIColor.returnRGBColor(r: 0, g: 0, b: 0, alpha: 1)
         }
     }
     

@@ -1,54 +1,43 @@
 //
-//  TBaseViewController+navbar.swift
-//  Transporte
+//  RPBaseViewController+navbar.swift
+//  ReparaPC
 //
 //  Created by Javier Cervantes on 13/11/17.
-//  Copyright © 2017 IDS Comercial. All rights reserved.
+//  Copyright © 2018 Oscod. All rights reserved.
 //
 
 import UIKit
 
-extension RPBaseViewController
-{
+extension RPBaseViewController {
     
-    func setupNavigationBarItems(){
+    func setupNavigationBarItems() {
         setupLeftNavItems()
-        //setupRightNavItems()
         setupRemainingNavItems()
-        
     }
     
-    private func setupRemainingNavItems(){
+    private func setupRemainingNavItems() {
         navigationController?.navigationBar.backgroundColor = UIColor.returnRGBColor(r: 0, g: 0, b: 0, alpha: 1)
     }
     
-    private func setupLeftNavItems(){
+    private func setupLeftNavItems() {
         
         let sideMenuButton = UIButton(type: .system)
         sideMenuButton.setImage(#imageLiteral(resourceName: "hamburgesa").withRenderingMode(.alwaysOriginal), for: .normal)
         sideMenuButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         sideMenuButton.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
-        
-        let backButton = UIButton(type: .system)
-        backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
-        backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        backButton.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
-        
         let textLabel = UILabel()
-        if let title = titleBarNavigation  {
+        if let title = titleBarNavigation {
             textLabel.text = title
         }
         textLabel.frame = CGRect(x: 0, y: 0, width: 180, height: 34)
         textLabel.textColor = UIColor.white
         textLabel.adjustsFontSizeToFitWidth = true
-
         let spaceView = UIView()
         spaceView.frame = CGRect(x: 0, y: 0, width: 10, height: 34)
-        
         navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: sideMenuButton), UIBarButtonItem(customView: spaceView), UIBarButtonItem(customView: textLabel)]
     }
     
-    func setupLeftBackNavItems(){
+    func setupLeftBackNavItems() {
         let backButton = UIButton(type: .system)
         backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
         backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
@@ -56,7 +45,7 @@ extension RPBaseViewController
         self.setupNavItems(buttom: backButton)
     }
     
-    func setupLeftBackSpecialNavItems(){
+    func setupLeftBackSpecialNavItems() {
         let backButton = UIButton(type: .system)
         backButton.setImage(#imageLiteral(resourceName: "icn-arrow-back-white").withRenderingMode(.alwaysOriginal), for: .normal)
         backButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
@@ -64,9 +53,9 @@ extension RPBaseViewController
         self.setupNavItems(buttom: backButton)
     }
     
-    func setupNavItems(buttom: UIButton){
+    func setupNavItems(buttom: UIButton) {
         let textLabel = UILabel()
-        if let title = titleBarNavigation  {
+        if let title = titleBarNavigation {
             textLabel.text = title
         }
         textLabel.frame = CGRect(x: 0, y: 0, width: 180, height: 34)
@@ -78,7 +67,7 @@ extension RPBaseViewController
         navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: buttom),UIBarButtonItem(customView: spaceView), UIBarButtonItem(customView: textLabel)]
     }
     
-    private func setupRightNavItems(){
+    private func setupRightNavItems() {
         let notificationsButton = UIButton(type: .system)
     
         notificationsButton.setImage(self.hasNotifications().withRenderingMode(.alwaysOriginal), for: .normal)
@@ -89,9 +78,8 @@ extension RPBaseViewController
         
     }
     
-    @objc func handleSearch(){
-        if let mainvc2 = self.mainVC
-        {
+    @objc func handleSearch() {
+        if let mainvc2 = self.mainVC {
             mainvc2.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
             let transition = CATransition()
             transition.duration = 0.5
@@ -103,7 +91,7 @@ extension RPBaseViewController
     }
     
     
-    @objc func handleShowNotifications(){
+    @objc func handleShowNotifications() {
         
 //        if let mainvc2 = self.notificationsVC{
 //            mainvc2.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
@@ -116,9 +104,9 @@ extension RPBaseViewController
 //        }
     }
     
-    @objc func handleShowPolicy(){
+    @objc func handleShowPolicy() {
         
-        if let mainvc2 = self.policyVC{
+        if let mainvc2 = self.policyVC {
             mainvc2.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
             let transition = CATransition()
             transition.duration = 0.5
@@ -129,17 +117,17 @@ extension RPBaseViewController
         }
     }
     
-    @objc func backToView(){
+    @objc func backToView() {
         self.navigationController?.popViewController(animated: true)
     }
     
     @objc func backToViewSpecial(){
-//        for aViewController in (self.navigationController?.viewControllers.reversed())! {
-//            if(aViewController.isKind(of: TSpontaneousRouteViewController.self)){
-//                self.navigationController!.popToViewController(aViewController, animated: true);
-//                break
-//            }
-//        }
+        for aViewController in (self.navigationController?.viewControllers.reversed())! {
+            if(aViewController.isKind(of: MainViewController.self)){
+                self.navigationController!.popToViewController(aViewController, animated: true);
+                break
+            }
+        }
     }
     
     func backToViewSpecialC(){
